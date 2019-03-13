@@ -1,36 +1,37 @@
----
-layout: page
----
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/blotter.min.js"></script>
+    <script src="js/liquidDistortMaterial.js"></script>
+    <title>PRZEMYSLAW ORGANIZATION</title>
+  </head>
+  <body>
+    <img src="img/przemyslaw.png" alt="" class="faceimg">
+    <div class="przemy">
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    {{ post.excerpt }}
-    <p class="post-meta">Posted by {% if site.author %}{{ site.author }}{% else %}{{ site.github_username }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-<hr>
-{% endfor %}
+    </div>
+    <div class="cont">
+      <p class="big">PRZEMYSŁAW DABROWSKI HAS DONE WORK IN RUBY ON RAILS, JQUERY, REACT.JS, JAVASCRIPT, HTML, AND CSS. VISIT HIS <a href="https://github.com/rcrdlbl">GITHUB PROFILE</a>, DOWNLOAD HIS RESUME, OR CONTACT HIM VIA <a href="mailto:przemyslaw@przemyslaw.org">EMAIL.</a></p>
+    </div>
+  <script type="text/javascript">
+    var text = new Blotter.Text("PRZEMYSŁAW.ORG", {
+      family: "Helvetica Neue, sans-serif",
+      size: 60,
+      fill: "#000000",
+      weight: 600,
+      padding: 15,
+      paddingLeft: 25
+    })
+    var material = new Blotter.LiquidDistortMaterial()
+    material.uniforms.uVolatility.value = 0.03
+    material.uniforms.uSpeed.value = 0.3
+    var blotter = new Blotter(material, {texts: text})
+    var scope = blotter.forText(text)
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+    scope.appendTo(document.querySelector('div.przemy'))
+
+  </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.world-factbook {
+
+}
+
+.world-factbook .details {
+  max-width: 50em;
+}
+
+.world-factbook .details a {
+  color: #000000
+}
+
+.world-factbook .screenshots img {
+  max-width: 100%;
+}

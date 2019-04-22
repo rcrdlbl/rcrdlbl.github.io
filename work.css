@@ -4,12 +4,26 @@
   }
 }
 
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
 .row {
   display: flex;
+  margin: 0;
+  padding: 0
 }
 
 .column {
   flex: 50%;
+}
+
+.world-factbook {
+  padding: 0.25rem;
+  color: #637079;
+  background-color: #ccd7dd;
 }
 
 .world-factbook .details {
@@ -17,7 +31,7 @@
 }
 
 .world-factbook .details a {
-  color: #000000
+  color: #637079;
 }
 
 .world-factbook .screenshots img {

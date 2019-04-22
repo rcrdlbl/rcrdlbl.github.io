@@ -1,5 +1,15 @@
-.world-factbook {
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
 }
 
 .world-factbook .details {
@@ -11,5 +21,5 @@
 }
 
 .world-factbook .screenshots img {
-  max-width: 100%;
+  max-width: 37rem;
 }

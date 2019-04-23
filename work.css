@@ -21,10 +21,13 @@ body {
   flex: 50%;
 }
 
+/* world factbook specific */
+
 .world-factbook {
   padding: 0.25rem;
   color: #637079;
-  background-color: #ccd7dd;
+  background: rgb(204,215,221);
+  background: linear-gradient(180deg, rgba(204,215,221,1) 75%, rgba(255,255,255,1) 100%);
 }
 
 .world-factbook .details {
@@ -42,4 +45,17 @@ body {
 
 .world-factbook .screenshots img {
   max-width: 39rem;
+}
+
+/* world map */
+
+.world-map {
+  width: 100%;
+}
+
+/* calorie tracker */
+
+.calorie-tracker {
+  margin-top: 5em;
+  padding: 0.25rem;
 }

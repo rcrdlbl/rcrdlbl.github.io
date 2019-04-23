@@ -71,3 +71,29 @@ body {
 .calorie-tracker img {
   max-width: 100%
 }
+
+/* world news */
+
+.tldr-news {
+  margin-top: 2em;
+  padding: 0.25rem;
+  background: #000;
+  color: #FFF;
+}
+
+.tldr-news .details {
+  padding-left: 0.5em;
+}
+
+.tldr-news img {
+  width: 100%;
+}
+
+.tldr-news .rip {
+  color: #D10910;
+  font-size: 1.25rem;
+}
+
+.tldr-news a {
+  color: #fff;
+}

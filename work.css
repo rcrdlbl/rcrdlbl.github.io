@@ -59,3 +59,15 @@ body {
   margin-top: 5em;
   padding: 0.25rem;
 }
+
+.calorie-tracker .details {
+  padding-left: 0.5rem
+}
+
+.calorie-tracker a {
+  color: #000;
+}
+
+.calorie-tracker img {
+  max-width: 100%
+}

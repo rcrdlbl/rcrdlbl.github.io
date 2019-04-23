@@ -1,6 +1,10 @@
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
+  .row {
+    display: flex;
+  }
+
   .column {
-    width: 100%;
+    flex: 1;
   }
 }
 
@@ -12,13 +16,11 @@ body {
 }
 
 .row {
-  display: flex;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem;
 }
 
 .column {
-  flex: 50%;
 }
 
 /* world factbook specific */
@@ -44,7 +46,7 @@ body {
 }
 
 .world-factbook .screenshots img {
-  max-width: 39rem;
+  max-width: 100%;
 }
 
 /* world map */

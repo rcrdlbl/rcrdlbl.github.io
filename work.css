@@ -1,0 +1,122 @@
+@media screen and (min-width: 600px) {
+  .row {
+    display: flex;
+  }
+
+  .column {
+    flex: 1;
+  }
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.row {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+/* world factbook specific */
+
+.world-factbook {
+  padding-top: 2.25em;
+  /* padding: 0.25rem; */
+  color: #637079;
+  background: rgb(204,215,221);
+  background: linear-gradient(180deg, rgba(204,215,221,1) 75%, rgba(255,255,255,1) 100%);
+}
+
+.world-factbook .details {
+  max-width: 50em;
+  padding-left: 0.5em;
+}
+
+.world-factbook .details a {
+  color: #637079;
+}
+
+.source {
+  float: right;
+}
+
+.world-factbook .screenshots img {
+  max-width: 100%;
+}
+
+/* world map */
+
+.world-map {
+  width: 100%;
+}
+
+/* calorie tracker */
+
+.calorie-tracker {
+  margin-top: 5em;
+  padding: 0.25rem;
+}
+
+.calorie-tracker .details {
+  padding-left: 0.5rem
+}
+
+.calorie-tracker a {
+  color: #000;
+}
+
+.calorie-tracker img {
+  max-width: 100%
+}
+
+/* world news */
+
+.tldr-news {
+  margin-top: 2em;
+  padding: 0.25rem;
+  background: #000;
+  color: #FFF;
+}
+
+.tldr-news .details {
+  padding-left: 0.5em;
+}
+
+.tldr-news img {
+  width: 100%;
+}
+
+.tldr-news .rip {
+  color: #D10910;
+  font-size: 1.25rem;
+}
+
+.tldr-news a {
+  color: #fff;
+}
+
+/* back button */
+
+.back-button {
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0.25em;
+  padding: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.back-button a {
+  color: rgba(0, 0, 0, 0.50);
+  display: inline-block;
+  text-decoration: none;
+}
